@@ -1,5 +1,3 @@
-const friendlyWords = require("friendly-words");
-
 const Reader = require('@maxmind/geoip2-node').Reader;
 
 exports.handler = function(event, context, callback) {
