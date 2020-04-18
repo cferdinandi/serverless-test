@@ -1,4 +1,4 @@
-import { Reader } from '@maxmind/geoip2-node';
+const Reader = require('@maxmind/geoip2-node').Reader;
 
 exports.handler = function(event, context, callback) {
 	Reader.open('/usr/local/share/GeoIP/GeoIP2-Country.mmdb').then(reader => {
